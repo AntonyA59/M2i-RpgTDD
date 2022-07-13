@@ -3,9 +3,11 @@ package rpgtdd;
 
 
 public class Character {
-    private int life;
 
-    public Character(int initialLife){
+    protected String name = "";
+    protected int life;
+
+    public Character(int initialLife, String name){
         this.life = initialLife;
     }
 
@@ -19,4 +21,6 @@ public class Character {
     public void hit(int damage){
         this.life -= damage;
     }
+
+
 }
